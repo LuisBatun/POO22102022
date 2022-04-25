@@ -14,8 +14,6 @@ public class Cuentahabiente {
     private String nombre;
     private float balance;
     
-    String nivel;
-    
     public Cuentahabiente() {
     }
 
@@ -60,6 +58,7 @@ public class Cuentahabiente {
     }
     
     public String evaluarNivelCliente(){
+        String nivel;
         /*Dependiendo el balance debe regresar un String con una de estas dos opciones:
         1.- “Cliente Regular” si es menor o igual a 50 mil.
         2.- “Cliente Premium” si es mayor a 50 mil*/
