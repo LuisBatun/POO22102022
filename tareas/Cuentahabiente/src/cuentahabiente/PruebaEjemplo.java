@@ -28,8 +28,8 @@ public class PruebaEjemplo {
         for (Cuentahabiente usuario : usuarios) {
             usuario.retirarDinero(60000);
             usuario.evaluarNivelCliente();
-        }
-            
-            
-        }
+            String nivel = usuario.nivel;
+            System.out.println(nivel);
+        }  
+    }
 }

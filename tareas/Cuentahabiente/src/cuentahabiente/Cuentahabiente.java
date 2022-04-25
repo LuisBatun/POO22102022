@@ -13,7 +13,9 @@ public class Cuentahabiente {
     private int idCliente;
     private String nombre;
     private float balance;
-
+    
+    String nivel;
+    
     public Cuentahabiente() {
     }
 
@@ -61,13 +63,11 @@ public class Cuentahabiente {
         /*Dependiendo el balance debe regresar un String con una de estas dos opciones:
         1.- “Cliente Regular” si es menor o igual a 50 mil.
         2.- “Cliente Premium” si es mayor a 50 mil*/
-        String nivel;
         System.out.println("----------------");
         System.out.println("ID: " + idCliente);
         System.out.println("Nombre: " + nombre);
         System.out.println("Balance: $" + balance);
         nivel = (balance <= 50000)? "Cliente Regular" : "Cliente Premium";
-        System.out.println(nivel);
-        return null;
+        return nivel;
     }
 }
