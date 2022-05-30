@@ -4,18 +4,23 @@
  */
 package conceptosbasicos;
 
+import ico.fes.lenovo.Procesador;
+
 /**
  *
  * @author Luis Fernando
  */
 public class ConceptosBasicos {
-
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hola otra vez");
+        Procesador cpu = new Procesador();
+        cpu.setFrecuencia(5.3f);
+        System.out.println( cpu );
+        
     }
     
 }
